@@ -1,9 +1,11 @@
 package com.example.SpringBootJPAP03OneToOne.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 @Entity
 @Table(name = "addresses")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"}) // Add this line
 public class Address {
 
     @Id
@@ -15,8 +17,7 @@ public class Address {
 
     public Address() { }
 
-    public Address(int id, String city, String state, Long pinCode) {
-        this.id = id;
+    public Address(String city, String state, Long pinCode) {
         this.city = city;
         this.state = state;
         this.pinCode = pinCode;

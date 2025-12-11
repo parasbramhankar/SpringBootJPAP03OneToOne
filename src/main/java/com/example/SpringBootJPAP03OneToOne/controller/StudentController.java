@@ -74,8 +74,4 @@ public class StudentController {
       return ResponseEntity.status(HttpStatus.NO_CONTENT).body("Student info delete Successfully");
   }
 
-
-
-
-
 }
