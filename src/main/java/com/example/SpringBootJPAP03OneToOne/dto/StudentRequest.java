@@ -3,6 +3,7 @@ package com.example.SpringBootJPAP03OneToOne.dto;
 import com.example.SpringBootJPAP03OneToOne.entity.Address;
 import com.example.SpringBootJPAP03OneToOne.entity.Student;
 
+
 public class StudentRequest {
 
     private String name;
