@@ -31,7 +31,6 @@ public class StudentController {
       Student student1=studentService.saveStudent(student);
 
       return ResponseEntity.status(HttpStatus.CREATED).body(student1);
-
   }
 
   @GetMapping("/{id}")
